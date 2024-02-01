@@ -29,8 +29,9 @@ users.greetingTwo = function() {
 
 
 
-/******************************************OBJECT PART TWO********************************************* */
 
+
+/******************************************OBJECT PART TWO********************************************* */
 
 
 const myObj = new Object() // This is singleton object
@@ -55,3 +56,19 @@ const obj5 = {...obj1, ...obj2, ...obj3}
 // console.log(Object.values(myObjTwo));
 // console.log(Object.entries(myObjTwo));
 // console.log(myObjTwo.hasOwnProperty("email"));
+
+
+
+
+
+/******************************************OBJECT DE STRUCTURE********************************************* */
+
+
+const course = {
+    courseName: "Javascript",
+    coursePrice: 999,
+    courseInstructor: "Rudransh"
+}
+
+const { courseInstructor:cInstruct, coursePrice, courseName } = course
+console.log(cInstruct);
